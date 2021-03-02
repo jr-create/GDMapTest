@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="我的位置"
+        android:textColor="#A020F0"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="top|center" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/activity_input_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="50dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:src="@drawable/route_bus_normal"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:tooltipText="公交" />
+
+            <ImageButton
+                android:id="@+id/btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:src="@drawable/route_drive_select"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:tooltipText="驾车" />
+
+            <ImageView
+                android:id="@+id/imv_b"
+                android:layout_width="32dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/aol_01"
+                android:tooltipText="步行" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/keyWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:queryHint="请输入目的地" />
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bus"
+                android:text="公交站点"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="路线"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

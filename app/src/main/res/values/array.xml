@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item>北京</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>广州</item>
+        <item>兰州</item>
+        <item>天津</item>
+        <item>重庆</item>
+        <item>合肥</item>
+        <item>常德</item>
+        <item>运城</item>
+        <item>太原</item>
+        <item>上沙</item>
+        <item>郴州</item>
+        <item>南京</item>
+        <item>长春</item>
+        <item>南昌</item>
+        <item>沈阳</item>
+        <item>西宁</item>
+        <item>西安</item>
+        <item>昆明</item>
+        <item>杭州</item>
+        <item>宁波</item>
+        <item>南宁</item>
+        <item>呼和浩特</item>
+        <item>银川</item>
+        <item>蚌埠</item>
+        <item>芜湖</item>
+        <item>淮南</item>
+        <item>亳州</item>
+        <item>阜阳</item>
+        <item>淮北</item>
+        <item>宿州</item>
+    </string-array>
+</resources>
